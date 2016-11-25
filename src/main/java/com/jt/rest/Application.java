@@ -34,7 +34,7 @@ public class Application {
 
             res.header("Location", url);
             res.status(201);
-            return "{\"id\": \" + id + \", \"url\": \" + url + \"}";
+            return "{\"id\": \"" + id + "\", \"url\": \"" + url + "\"}";
         });
 
         put("/api/users/:id", (req, res) -> {
